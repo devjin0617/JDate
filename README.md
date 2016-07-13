@@ -7,5 +7,5 @@ JIN Date Util
 npm install node-jdate
 ```
 
-[npm-image]: https://img.shields.io/badge/npm-v0.0.1-blue.svg
+[npm-image]: https://img.shields.io/badge/npm-v0.0.4-blue.svg
 [npm-url]: https://www.npmjs.com/package/node-jdate

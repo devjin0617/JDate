@@ -1,6 +1,6 @@
 {
   "name": "node-jdate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "simple javascirpt date util",
   "main": "index.js",
   "scripts": {

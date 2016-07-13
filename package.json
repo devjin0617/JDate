@@ -1,5 +1,5 @@
 {
-  "name": "jdate",
+  "name": "node-jdate",
   "version": "0.0.1",
   "description": "simple javascirpt date util",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/devjin0617/JDate.git"
   },
   "keywords": [
-    "date", "javasciprt", "날짜", "시간", "time", "datetime"
+    "date", "javasciprt", "날짜", "시간", "time", "datetime", "jdate", "node-jdate"
   ],
   "author": "devjin0617",
   "license": "MIT",

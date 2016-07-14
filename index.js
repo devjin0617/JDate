@@ -9,6 +9,7 @@ function init(date) {
     }
 
     if(typeof date === 'string') {
+        this.date = new Date(date);
         return this.dateString = date;
     }
 

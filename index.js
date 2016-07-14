@@ -1,4 +1,3 @@
-
 function init(date) {
 
     if(!date) {
@@ -14,7 +13,6 @@ function init(date) {
     }
 
 }
-exports.init = init;
 
 function toDateString(date, format) {
 
@@ -33,7 +31,6 @@ function toDateString(date, format) {
     return this.dateString = date.toString();
 
 }
-exports.toDateString = toDateString;
 
 function toDate(dateString, format) {
 
@@ -51,4 +48,54 @@ function toDate(dateString, format) {
 
     return this.date = new Date(dateString);
 }
-exports.toDate = toDate;
+
+function calc(type, value) {
+
+    if(!this.date) {
+        console.log('error');
+        return;
+    }
+
+    var opt = {
+        year : this.date.getFullYear(),
+        month : this.date.getMonth(),
+        day : this.date.getDate(),
+        hour : this.date.getHours(),
+        minute : this.date.getMinutes(),
+        second : this.date.getSeconds()
+    };
+
+    switch(type) {
+        case 'year' :
+            opt.year = this.date.getFullYear() + (value);
+            break;
+        case 'month' :
+            opt.month = this.date.getMonth() + (value);
+            break;
+        case 'day' :
+            opt.day = this.date.getDate() + (value);
+            break;
+        case 'hour' :
+            opt.hour = this.date.getHours() + (value);
+            break;
+        case 'minute' :
+            opt.minute = this.date.getMinutes() + (value);
+            break;
+        case 'second' :
+            opt.second = this.date.getSeconds() + (value);
+            break;
+        default :
+            console.log('error');
+            return;
+    }
+
+    this.date = new Date(opt.year, opt.month, opt.day, opt.hour, opt.minute, opt.second);
+}
+
+
+module.exports = {
+    init : init,
+    toDateString : toDateString,
+    toDate : toDate,
+    calc : calc
+};

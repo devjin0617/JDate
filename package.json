@@ -4,19 +4,29 @@
   "description": "simple javascirpt date util",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/devjin0617/JDate.git"
   },
   "keywords": [
-    "date", "javasciprt", "날짜", "시간", "time", "datetime", "jdate", "node-jdate"
+    "date",
+    "javasciprt",
+    "날짜",
+    "시간",
+    "time",
+    "datetime",
+    "jdate",
+    "node-jdate"
   ],
   "author": "devjin0617",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/devjin0617/JDate/issues"
   },
-  "homepage": "https://github.com/devjin0617/JDate#readme"
+  "homepage": "https://github.com/devjin0617/JDate#readme",
+  "devDependencies": {
+    "assert": "^1.4.1"
+  }
 }
